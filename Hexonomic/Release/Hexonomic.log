@@ -1,0 +1,23 @@
+﻿  Application.cpp
+  Command.cpp
+  CommandQueue.cpp
+  Country.cpp
+  DataTable.cpp
+  Entity.cpp
+  GameState.cpp
+  main.cpp
+main.cpp(9): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Map.cpp
+  Player.cpp
+Player.cpp(127): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  SceneNode.cpp
+  State.cpp
+  StateStack.cpp
+  TileMapNode.cpp
+  Unit.cpp
+  Utility.cpp
+  World.cpp
+  Создание кода
+  Создание кода завершено
+  All 1801 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Hexonomic.vcxproj -> D:\Hexonomic\Release\Hexonomic.exe
