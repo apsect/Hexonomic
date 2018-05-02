@@ -208,7 +208,6 @@ void Player::handleRealtimeInput(CommandQueue& commands)
 			if (mWorldView != nullptr)
 				mWorldView->move(-offset.x, -offset.y);
 			mScrollMapStep = mousePosition;
-			//std::cout << buff.x << ' ' << buff.y << ' '  << scrollMapStep.x << ' ' << scrollMapStep.y << std::endl;
 		}
 	}
 	else if (mScrollMapStep != sf::Vector2i())

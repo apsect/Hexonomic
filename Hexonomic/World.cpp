@@ -81,9 +81,12 @@ void World::buildScene()
 	bordersMap->load(bordersTexture, bordersType, mMap.getMapWidth(), mMap.getMapHeight());
 	mSceneLayers[CoutryBorder]->attachChild(std::move(bordersMap));
 
-	std::unique_ptr<Unit> player(new Unit(Unit::Archer, mTextures, sf::Vector2i(1, 1)));
+	std::unique_ptr<Unit> player(new Unit(Unit::Peasant, mTextures, sf::Vector2i(8, 8)));
 	mSceneLayers[Units]->attachChild(std::move(player));
 
-	std::unique_ptr<Unit> player1(new Unit(Unit::Swordsman, mTextures, sf::Vector2i(2, 2)));
+	std::unique_ptr<Unit> player1(new Unit(Unit::Pikeman, mTextures, sf::Vector2i(9, 9)));
 	mSceneLayers[Units]->attachChild(std::move(player1));
+
+	std::unique_ptr<Unit> player2(new Unit(Unit::Crossbowman, mTextures, sf::Vector2i(10, 10)));
+	mSceneLayers[Units]->attachChild(std::move(player2));
 }
